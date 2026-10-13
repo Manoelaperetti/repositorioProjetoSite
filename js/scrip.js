@@ -8,5 +8,14 @@ document.addEventListener("DOMContentLoaded",() => {
     addEventListener("click", () =>{
         navMenu.classList.toggle("active")
     })
-}) // fechamento do evento carregar página 
+
+ const navLinks = document.querySelectorAll(".nav-menu a");
+ navLinks.forEach((link) =>{
+    link.addEventListener("click", () =>{
+        navMenu.classList.remove("active");
+    });
+ });
+
+}); // fechamento do evento carregar página 
 //teste
+
